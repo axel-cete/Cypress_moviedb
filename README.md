@@ -2,7 +2,7 @@
 
 Created by: Axel Christmarco Tjindana<br><br>
 This project is for the purpose of Using Cypress for e2e Testing <br>
-using website themoviedb.org
+using website https://www.themoviedb.org
 
 # How To
 
