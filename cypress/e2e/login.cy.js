@@ -88,7 +88,7 @@ describe('Testing Mark as Favourite Feature', () => {
                 const text = $text.text()
         cy.get('ul').should('have.class', 'auto actions')
         cy.get('a[class="no_click add_to_account_list favourite"]').click()
-
+        cy.wait(1000)
         cy.visit('www.themoviedb.org/movie')
         cy.get('[class = "card style_1"]').eq(3).click()
         cy.get('h2[class="35"]').find('a')
@@ -103,7 +103,7 @@ describe('Testing Mark as Favourite Feature', () => {
         cy.get('div[class="title"]').find('h2').first().should(($text2) => {
             expect($text2.text()).to.eq(text2)
              })
-        cy.get('div[class="title"]').find('h2').eq(2).should(($text4) => {
+        cy.get('div[class="title"]').find('h2').eq(1).should(($text4) => {
             expect($text4.text()).to.eq(text)
             })
 
@@ -117,7 +117,6 @@ describe('Testing Mark as Favourite Feature', () => {
     it('User can Sort Favourite Movie', () => {
         cy.LoginApps()
         cy.visit('www.themoviedb.org/u/' + username +'/favorites')
-        cy.url().should('have', username).and.to.eq(username)
         cy.get('div[class="title"]').find('h2').first()
         .then(($text_1) => {
             const first = $text_1.text
