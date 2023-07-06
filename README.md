@@ -1,6 +1,6 @@
 # Introduction
 
-Created by: <u>Axel Christmarco Tjindana</u><br>
+Created by: Axel Christmarco Tjindana<br><br>
 This project is for the purpose of Using Cypress for e2e Testing <br>
 using website themoviedb.org
 
