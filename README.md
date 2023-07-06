@@ -19,7 +19,7 @@ To start testing run using CLI type this code:<br>
 # Notes
 
 <ol>
-  <li>Change the username and password through **cypress.config.js**</li>
-  <li>Node.js version: **18.16.1**</li>
-  <li>Cypress version: **12.17.0**</li>
+  <li>Change the username and password through <b>cypress.config.js</b></li>
+  <li>Node.js version: <b>18.16.1</b></li>
+  <li>Cypress version: <b>12.17.0</b></li>
 </ol>
